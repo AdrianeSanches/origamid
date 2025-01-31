@@ -1,0 +1,28 @@
+/*    inline: respeita o fluxo da escrita sem iniciar uma nova linha, não é possível definir valores de width, height, margin (top/bottom) e etc. É o estilo padrão
+        block: inicia uma nova linha e não permite que utros elementos sejam posicionados em sua linha. Aceita todas as propriedades do box model. Estilo inicial de elemntos como h1, p, div e outros. */
+
+/*  none: remove o elemento completamente da tela
+    inline-block: o elemento continua inline, mas passa a receber as propriedades do box model */
+h1 {
+  background: #ddd;
+  width: 300px;
+}
+
+span,
+a,
+strong {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+div,
+h1,
+p {
+  border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+/* aqui neste exemplo, se só colocamos o padding na tag a, ele fica ultrapassando o elemento pai, pois ele nao tem disply block, logo nao pode usar as propriedades do box model (como o padding), mas se colocamos o displau como inline-block, ele passa a respeitar o espaço do componente pai, atribuindo o padding corretamente */
+.link {
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+}

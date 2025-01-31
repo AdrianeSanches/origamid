@@ -1,0 +1,34 @@
+<!-- Atribuindo o tipo do documento como HTML 5+ -->
+<!DOCTYPE html>
+
+<!-- tag raiz, nao é essencial, mas é uma boa pratica sempre colocar -->
+<html>
+<!-- tag para informacoes do browser -->
+
+<head>
+    <!-- charset declara como os caracteres da pagina serao interpretados, fazer com q acento funcione bem -->
+    <meta charset="UTF-8">
+
+    <!-- tag para o título do site -->
+    <title>Carros e Bicicletas</title>
+
+    <!-- rel: define o tipo do arquivo -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./styles2.css"> aqui, se eu duplico a linha d link, eu consigo linkar 2 arquivos de css com esse html, e assim por diante. Aleém disso, a ordem das tags importam, então se eu colocar o link com o style.css, o css que vai refletir é o que está dentro do style, pois foi o último a ser carregado -->
+</head>
+
+<!-- na tag body colocamos todo o conteúdo do site  -->
+
+<body>
+    <!-- colocando mais de uma classe na mesma tag -->
+    <!-- <h1 id="intro" class="classe1 classe2 classe3">Carros e Bicicletas</h1> -->
+    <h1 id="intro">Carros e Bicicletas</h1>
+
+    <p>Veja mais <a href="/">produtos</a>.</p>
+
+    <!-- <a href="produtos/carros.html">Carros</a> - esse cara sem o / na frente significa que ele vai iniciar pela pasta raís, como se fosse ./ ou só o / (so o / é ruim, pois leva pra pasta inicial do diretorio, aqui no caso deste projeto seria a pasta Acer (D)) , o ../ volta para a pasta anterior -->
+    <a href="./produtos/carros.html" class="codigo">Carros</a>
+    <a href="./produtos/bicicletas.html" class="design">Bicicletas</a>
+</body>
+
+</html>

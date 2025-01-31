@@ -1,0 +1,16 @@
+/* se voce coloca somente 3 caracteres, o hexadecimal funciona, pois ele vai duplicar os digitos, entao se colocamos #84d ele vai transformar em #8844dd */
+
+/* formato rgb de representar a cor: é uma funcao que recebe 3 parametros, sendo o valor de r (red), g (green) e b (blue) --> color: rgb(255,255,255) */
+
+/* formato rgba: é o formato rgb + a (alpha), a letra a é a transaparencia dessa cor, que vai de 0 a 1. Essa funcao recebe 4 parametros -->  color: rgba(255,255,255,1) */
+
+h1 {
+  background: #000000;
+  color: #8844ee;
+}
+
+a {
+  background: seagreen;
+  color: white;
+  font-size: 30px;
+}

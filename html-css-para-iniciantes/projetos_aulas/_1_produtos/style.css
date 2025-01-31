@@ -1,0 +1,37 @@
+/* selecione todo tag a que está dentro da tag html, nessa estrutura, ele sempre vai selecionar a última tag mencionada | o mesmo vale para as classes */
+/* html a {
+  color: black;
+} */
+/* .codigo .design {
+  color: blue;
+} */
+
+/* se eu instancio duas classes no mesmo bloco, ambas terão o mesmo css - desde que sejam separadas por vírgula */
+/* .codigo,
+.design {
+  color: blue;
+} */
+
+/* ID é um atributo que adiciona um identificador único na tag. Esse identificador pode ser utilizado no css para selecionarmos o elemento: #nomeid | ID sempre começa com letras ou com _ mas nunca com números | no css, para instancia a classe você usa o # */
+/* #logo {
+  color: black;
+} */
+
+/* Classe: o atributo html que adiciona um identificador reutilizável na tag. Esse identificador pode ser utilizado no CSS para selecionarmos o(s) elemento(s): .classe | a diferença da classe e da ID é que a classe podemos utilizar quantas vezes quisermos durante o código, já a ID não */
+/* <h1 class="codigo"></h1> */
+/* .codigo {
+  color: aqua;
+} */
+
+#intro {
+  color: gold;
+}
+
+.codigo,
+.design {
+  color: blue;
+}
+
+.design {
+  color: red;
+}

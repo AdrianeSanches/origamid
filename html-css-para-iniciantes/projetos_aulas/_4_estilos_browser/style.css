@@ -1,0 +1,40 @@
+/* estilos de browser: alguns browsers aplicaram estilos via css nos elementos, se você inspecionar um elemento na página, você verá que o proprio browser ja aplicou alguns estilos */
+/* os browsers mantém um estilo semelhante, tentando manter um padrão entre eles. Nao sao iguais, mas sao parecidos */
+
+/*
+    Não utilizadas durante o curso, citadas para passar conhecimento
+    Durante as aulas o professor prefere estilizar diretamente os componentes da forma que precisa dentro do css, conforme exemplo do css abaixo
+
+    Reset: remove parte dos estilos iniciais
+    https://meyerweb.com/eric/tools/css/reset/
+
+    Normalize: normaliza os estilos iniciais entre os browsers sem remover os mesmos
+    https://necolas.github.io/normalize.css/
+
+    Reboot: é uma mistura do reset e normalize utilizada pelo boorstrap
+    https://raw.githubusercontent.com/twbs/bootstrap/main/dist/css/bootstrap-reboot.css
+
+*/
+
+/* 
+    inherit (herança): existem propriedades do css que são passadas do pai para o filho como uma herança (inherit)
+        color, font-size, font-family, etc...
+    
+    Padrão x Herança
+        O valor padrão irá escrever por cimad a herança, POr isso, ao definirmos uma color no body, os <a> e <button> do html não mudam de cor
+        Para mudá-los de cor, tem que selecionar a tag e alterar diretamente ela, conforme exemplos abaixo
+*/
+
+body {
+  color: seagreen;
+}
+
+/* aqui ele altera a cor diretamente na tag a
+a {
+  color: seagreen; 
+}
+*/
+
+a {
+  color: inherit; /* aqui ele herda por herança ao componente pai, no caso, o body*/
+}

@@ -1,0 +1,5 @@
+/* max-width garante que a imagem não fique maior que o elemento pai, sem esticar e mantendo a qualidade */
+img {
+  max-width: 100%;
+  display: block;
+}
