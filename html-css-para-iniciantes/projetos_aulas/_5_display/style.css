@@ -1,4 +1,4 @@
-/*    inline: respeita o fluxo da escrita sem iniciar uma nova linha, não é possível definir valores de width, height, margin (top/bottom) e etc. É o estilo padrão
+/*    inline: respeita o fluxo da escrita sem iniciar uma nova linha, não é possível definir valores de width, height, margin (top/bottom) e etc. É o estilo padrão. Ele não respeita as configurações de margem e padding dos elementos, sobrepondo um a outro.
         block: inicia uma nova linha e não permite que utros elementos sejam posicionados em sua linha. Aceita todas as propriedades do box model. Estilo inicial de elemntos como h1, p, div e outros. */
 
 /*  none: remove o elemento completamente da tela

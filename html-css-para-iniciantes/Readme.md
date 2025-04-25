@@ -20,6 +20,12 @@ https://necolas.github.io/normalize.css/
 Reboot: é uma mistura do reset e normalize utilizada pelo boorstrap
 https://raw.githubusercontent.com/twbs/bootstrap/main/dist/css/bootstrap-reboot.css
 
+Guias sobre GRID
+https://www.origamid.com/projetos/grid/
+https://www.origamid.com/projetos/css-grid-layout-guia-completo/
+https://grid.malven.co/
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
 ---
 
 Sites que podemos baixar imagens gratuitas

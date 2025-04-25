@@ -1,0 +1,55 @@
+body {
+  font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+.comprar {
+  background: #a8f;
+  padding: 10px 20px;
+  color: #103;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.item {
+  background: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px; /*margem dentro da propriedade grid*/
+  height: 800px; /*incluindo para exemplificar o align-content*/
+
+  grid-template-columns: auto auto;
+  /* essa propriedade serve para definir a quantidade de colunas e o tamanho dela, entao cada numero representa o tamanho dela e a quantidade de colunas 
+    a porcentagem nao é recomendada, uma vez que ele pega a porcentagem do tamanho total do container, o que pode fazer estourar o elemento e sair da margem
+    
+    grid-template-columns: 1fr 1fr; 
+        a unidade fr é mais recomendada caso você queira distribuir as colunas em tamanhos iguais, por ele distribui de forma igual o espaço que sobra entre ambos os elementos - é como aplicar o 100$ de width na div 
+    
+    grid-template-columns: auto auto;
+        o tamanho de automatico é fazer com que o conteúdo sempre caiba dentro do elemento o máximo possível, tipo um texto longo, que faz com que o tamanho se alongue
+    */
+
+  align-content: space-around;
+  /* ele só alinha na vertical, e assim como o justify-content, só consegue exercer sua função se tem espaço suficiente para fazer isso em tela - se aplicar uma altura (height) maior do que os elementos preenchem, a propridade vai funcionar */
+
+  justify-content: space-evenly;
+  /* propriedade de alinhamento das grades, só funciona quando tem espaço sobrando na tela, isso significa que tem que ser usado em itens que não possui a largura totalmente utilizada (100%) ou com fr (que faz a mesma coisa)
+  o space-evenly tenta criar espaçamentos mais iguais entre cada coluna (ou linha, dependendo da propriedade) - no caso do justify-content, é coluna, no caso do align-content é linha*/
+
+  /* place-content: space-around space-evenly;
+        é a junção do align-content e do justify-conten, respectivamente
+        place-content: space-around
+            se colocar somente um valor, ele aplica a mesma propridade para os dois*/
+}
