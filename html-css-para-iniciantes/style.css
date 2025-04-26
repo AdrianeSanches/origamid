@@ -1,54 +1,5 @@
-/*Grid x Flexbox
-    Não tem essa de um é melhor que o outro. É possível usar ambos ao mesmo tempo, vai depender para que você precisa de cada um, pois eles resolvem problemas diferentes
-    
-    O grid te dá o controle em todos os eixos (maior controle de colunas e linhas) e o flexbox apenas no total de itens dentro dele (filhos)*/
+/* Position: a propriedade position possui valores que remove o elemento do fluxo padrão do documento. O padrão do valor é static 
+    top, right, left e bottom definem o posicionamento dos elementos que não estão no fluxo padrão */
 
-/* flex: 1;
-  é um atalho para outras 3 propriedades --> flex:1 = flex-grow: 1, flex-shrink:1, flex-basis: 0%*/
-
-/* flex-grow: 1; 
-    serve para expandir os elementos para ocupar todo o espaço na horizontal, então as palavras que estão dentro do h2 nao vao até o fim da linha, essa propriedade vai fazer com que esse espaço seja distribuido dentro deles e ocupar o espaço (esse crescimento é feito após o final de cada conteúdo, então ao fim do texto ele adiciona a mesma quantidade de espaçamento para todos, o que fazem com que o tamanho de cada um fique diferente) 
-    o padrão é 0, para não crescer nada*/
-
-/* flex-basis: 0;
-    colocando essa propriedade para 0, ele sana o problema da propriedade flex-grow, fazendo com que todos os textos fiquem do mesmo tamanho quando expandidos, mesmo que o texto em si sejam de tamanhos diferentes 
-      nesse caso precisa colocar as duas propriedades dessa forma: flex-grow: 1 e flex-basis:0
-    se eu coloco essa propriedade com um valor fixo, tipo 200px, e removo o flex-grow, ele vai definir que cada item deve ter uma largura fixa de no minimo 200px 
-    como padrão vem como auto*/
-
-/* flex-shrink: 1;
-    essa propriedade, quando colocado com o flex-basis: auto, impede que a palavra seja quebrada quando a tela é diminuída 
-    como padrão vem como 1*/
-
-/* grid-template-columns: repeat(auto-fit, 200px); 
-    o auto-fix fala para criar colunas enquanto der para criar com o conteúdo disponibilizado, porém, ele só vai funcionar se você colocar valores específicos, como o 200px, com o 1fr não funciona, pois a propriedade fr expante a linha até o fim da tela, e sem espaço, nao é possível ele criar mais colunas
-  
-  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-    essa função recebe dois valores, o valor minimo e o valor maximo que a coluna pode ter, permitindo que ele vá criando mais colunas caso caiba na tela
-  */
-
-.flex {
-  display: flex;
-  flex-wrap: wrap; /* permite que os elementos de uma linha quebre em mais linhas quando a tela é diminuida */
-  gap: 20px;
-  justify-content: center;
-  /*  height: 100vh; --> 100% a altura da tela*/
-}
-
-.grid {
-  margin-top: 60px;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-}
-
-body {
-  margin: 0px;
-}
-
-h2 {
-  background: #e7e7e7;
-  border: 1px solid #d7d7d7;
-  padding: 20px;
-  margin: 0px;
-}
+/* position:fixed;
+    fixa o elemento na tela */
