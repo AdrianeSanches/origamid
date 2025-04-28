@@ -44,6 +44,13 @@
                 Caso o título exista na tela, marque o mesmo com um id e use este atributo para criar uma relação entre eles.
     
     Diferenças entre as tags article e section: https://www.smashingmagazine.com/2020/01/html5-article-section/
+
+    Mais tags semanticas
+        <blockquote>:  marca uma citação extensa e recebe um atributo cite com a fonte
+        q: marca uma citação inline (no texto)
+        <cite>: é utilizada para citar o nome de um trabalho, livro, filme, peça ou algo parecido. Não é para citar autor
+        <em>: é utilizada para dar enfase em uma frase/palavra no texto
+        <strong>: é utilizada para marcar uma parte importante do conteúdo
 -->
 
 <body>
@@ -75,6 +82,32 @@
         <h2>Sobre a Surfboat</h2>
         <p>Conheça mais as marcas que vendemos no site</p>
     </section>
+
+    <h2>Tag blockquote</h2>
+    <blockquote cite="https://tseliot.com/">
+        <p>
+            Não devemos parar de explorar, e o fim de toda nossa exploração será chegar
+            onde começamos e conhecer o lugar pela primeira vez
+        </p>
+    </blockquote>
+    <p>T. S. Eliot</p>
+
+    <h2>Tag q</h2>
+    <p>
+        Como já dizia o poeta <q cite="https://www.origamid.com/curso/">se HTML está difícil, nem comece com JavaScript</q>
+    </p>
+
+    <h2>Tag cite</h2>
+    <p>Eu indico o livro <cite>Mythos</cite> escrito por Stephen Fry</p>
+
+    <h2>Tag em</h2>
+    <p><em>Nenhum animal</em> foi maltratado na produção deste conteúdo.</p>
+
+    <h2>Tag strong</h2>
+    <p>
+        É importante entender como os frameworks funcionam. Porém
+        <strong>é essencial aprender JavaScript</strong>.
+    </p>
 
     <footer>
         <p>Alguns direitos reservados.</p>
